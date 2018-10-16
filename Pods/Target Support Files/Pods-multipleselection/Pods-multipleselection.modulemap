@@ -1,0 +1,6 @@
+framework module Pods_multipleselection {
+  umbrella header "Pods-multipleselection-umbrella.h"
+
+  export *
+  module * { export * }
+}

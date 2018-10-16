@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C60690DA8EEF509CEEA7EDE /* Pods_multipleselection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C72A3A1EF7B78E76724C84D /* Pods_multipleselection.framework */; };
+		CE56EC6A215E2B1300F17161 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56EC69215E2B1300F17161 /* detailViewController.swift */; };
+		CE56EC6C215E3A7E00F17161 /* CroppedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56EC6B215E3A7E00F17161 /* CroppedViewController.swift */; };
 		CE7621D6215CA7C40059A5F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7621D5215CA7C40059A5F6 /* AppDelegate.swift */; };
 		CE7621D8215CA7C40059A5F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7621D7215CA7C40059A5F6 /* ViewController.swift */; };
 		CE7621DB215CA7C40059A5F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7621D9215CA7C40059A5F6 /* Main.storyboard */; };
 		CE7621DD215CA7C40059A5F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7621DC215CA7C40059A5F6 /* Assets.xcassets */; };
 		CE7621E0215CA7C40059A5F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7621DE215CA7C40059A5F6 /* LaunchScreen.storyboard */; };
+		CE7621E8215CA8250059A5F6 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7621E7215CA8250059A5F6 /* ImageCollectionViewController.swift */; };
+		CE7621EA215CA8760059A5F6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7621E9215CA8760059A5F6 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C72A3A1EF7B78E76724C84D /* Pods_multipleselection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_multipleselection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9121B7151679BBD19B829F4A /* Pods-multipleselection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multipleselection.release.xcconfig"; path = "Pods/Target Support Files/Pods-multipleselection/Pods-multipleselection.release.xcconfig"; sourceTree = "<group>"; };
+		CE56EC69215E2B1300F17161 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		CE56EC6B215E3A7E00F17161 /* CroppedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CroppedViewController.swift; sourceTree = "<group>"; };
 		CE7621D2215CA7C40059A5F6 /* multipleselection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multipleselection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7621D5215CA7C40059A5F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7621D7215CA7C40059A5F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		CE7621DC215CA7C40059A5F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7621DF215CA7C40059A5F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7621E1215CA7C40059A5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7621E7215CA8250059A5F6 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		CE7621E9215CA8760059A5F6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FEF3D9501CE3BB68559E8B7A /* Pods-multipleselection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multipleselection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-multipleselection/Pods-multipleselection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C60690DA8EEF509CEEA7EDE /* Pods_multipleselection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC9E330165B79039F0B17F8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3D9501CE3BB68559E8B7A /* Pods-multipleselection.debug.xcconfig */,
+				9121B7151679BBD19B829F4A /* Pods-multipleselection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD2660B46B51AD15018E95FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C72A3A1EF7B78E76724C84D /* Pods_multipleselection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE7621C9215CA7C40059A5F6 = {
 			isa = PBXGroup;
 			children = (
 				CE7621D4215CA7C40059A5F6 /* multipleselection */,
 				CE7621D3215CA7C40059A5F6 /* Products */,
+				BC9E330165B79039F0B17F8B /* Pods */,
+				CD2660B46B51AD15018E95FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +92,10 @@
 				CE7621DC215CA7C40059A5F6 /* Assets.xcassets */,
 				CE7621DE215CA7C40059A5F6 /* LaunchScreen.storyboard */,
 				CE7621E1215CA7C40059A5F6 /* Info.plist */,
+				CE7621E7215CA8250059A5F6 /* ImageCollectionViewController.swift */,
+				CE7621E9215CA8760059A5F6 /* CollectionViewCell.swift */,
+				CE56EC69215E2B1300F17161 /* detailViewController.swift */,
+				CE56EC6B215E3A7E00F17161 /* CroppedViewController.swift */,
 			);
 			path = multipleselection;
 			sourceTree = "<group>";
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE7621E4215CA7C40059A5F6 /* Build configuration list for PBXNativeTarget "multipleselection" */;
 			buildPhases = (
+				E804747DDF86D2B56B557AB8 /* [CP] Check Pods Manifest.lock */,
 				CE7621CE215CA7C40059A5F6 /* Sources */,
 				CE7621CF215CA7C40059A5F6 /* Frameworks */,
 				CE7621D0215CA7C40059A5F6 /* Resources */,
+				D0679C19438F8CCCC8BDBD3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +168,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D0679C19438F8CCCC8BDBD3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-multipleselection/Pods-multipleselection-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BSGridCollectionViewLayout/BSGridCollectionViewLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/BSImagePicker/BSImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/BSImageView/BSImageView.framework",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSGridCollectionViewLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSImageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-multipleselection/Pods-multipleselection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E804747DDF86D2B56B557AB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-multipleselection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE7621CE215CA7C40059A5F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE56EC6C215E3A7E00F17161 /* CroppedViewController.swift in Sources */,
+				CE7621E8215CA8250059A5F6 /* ImageCollectionViewController.swift in Sources */,
 				CE7621D8215CA7C40059A5F6 /* ViewController.swift in Sources */,
+				CE7621EA215CA8760059A5F6 /* CollectionViewCell.swift in Sources */,
+				CE56EC6A215E2B1300F17161 /* detailViewController.swift in Sources */,
 				CE7621D6215CA7C40059A5F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,10 +365,13 @@
 		};
 		CE7621E5215CA7C40059A5F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF3D9501CE3BB68559E8B7A /* Pods-multipleselection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5357ZT4A3K;
 				INFOPLIST_FILE = multipleselection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,10 +385,13 @@
 		};
 		CE7621E6215CA7C40059A5F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9121B7151679BBD19B829F4A /* Pods-multipleselection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5357ZT4A3K;
 				INFOPLIST_FILE = multipleselection/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
